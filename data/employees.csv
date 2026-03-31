@@ -1,0 +1,5 @@
+employee_id,name,department,incentive_rate,slab_type,slab_min,slab_max
+1,A,Sales,0.003,range ,1.45,4
+2,B,Sales,0.002,range ,4,7
+3,C,Sales,0.005,above,7,
+4,D,Sales,0.003,full,0,
