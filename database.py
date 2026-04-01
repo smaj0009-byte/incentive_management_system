@@ -97,6 +97,24 @@ def load_employees(month):
     return df
 
 
+def update_incentive_rate(employee_id, month, new_rate):
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+        UPDATE employees
+        SET incentive_rate=?
+        WHERE employee_id=? AND month=?
+        """,
+        (new_rate, employee_id, month)
+    )
+
+    conn.commit()
+    conn.close()
+
+
 def save_monthly_records(df, month):
 
     conn = get_connection()
