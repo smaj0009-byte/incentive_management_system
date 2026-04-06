@@ -212,7 +212,7 @@ def run():
             days_of_month = st.number_input(
                 "Days of Month",
                 min_value=1,
-                value=25
+                value=30
             )
 
             if st.button("Calculate Incentives"):

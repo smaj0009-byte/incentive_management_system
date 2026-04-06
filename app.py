@@ -8,11 +8,9 @@ st.set_page_config(
     layout="wide"
 )
 
-# Correct logo path
 BASE_DIR = Path(__file__).parent
-logo_path = BASE_DIR / "Logo.png"
+logo_path = BASE_DIR / "MKBS_Logo.jpeg"
 
-# Layout for title + logo
 col1, col2 = st.columns([5,3])
 
 with col1:
